@@ -1,12 +1,8 @@
 /*
 * index_event.js
 */
-
-
-var targets = document.querySelectorAll('.header_li');
-    targets.forEach(function(target) {
-        target.addEventListener('click', logEvent);
+$(function(){
+    $(".header_li").on("click",function(){
+        location.href="#"+$(this).text();
     });
-    function logEvent(event) {
-        alert(this.text);
-    }
+});

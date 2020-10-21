@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>Bumduck PortFolio</title>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <style>
     *{padding: 0; margin: 0;}
 
@@ -10,21 +11,26 @@
     #header_ ul li{list-style: none; float: right; margin-right: 3rem; padding: 1.5rem; color: white;}
     #header_ ul li:hover{cursor: pointer;}
     #header_ ul li:last-child{margin-left: 3rem;}
-    
+
     /*Home*/
 
-    #HomePage{height: 100vh; width: 100%; display: flex; justify-content: center; align-items: center;  background-image: url(img/Back.jpg); background-repeat: no-repeat; background-size: cover;}
-    #HomePage h1{font-size: 3vw; color: white;}
+    #Home{height: 100vh; width: 100%; display: flex; justify-content: center; align-items: center;  background-image: url(img/Back.jpg); background-repeat: no-repeat; background-size: cover;}
+    #Home h1{font-size: 3vw; color: white;}
 
     /*About*/
 
-    #About{display: flex; width: 100%; height: 100%;}
+    #About{display: flex; width: 100%; height: 100%; background-color: #DDFFAA;}
     #About_Title{width: 25vw; margin-left: 4vw; margin-right: 6vw; text-align: center; align-self: center;}
     #About_Content{margin: 8vw 8vw 8vw 0;}
 
     /*Skills*/
 
-    #Skills{width: 100%; height: 100%; text-align: center;}
+    #Skills{width: 100%; height: 100%; text-align: center; background-color: #00000011; padding-top: 15px;}
+    #Skills_Content > div{align-self: center; margin: 15px 0 0 0;}
+    #Skills_Content > div > div{display: inline-block; width: 115px; height: 115px; margin: 2vw 3vw 2vw 0; box-shadow: 5px 5px 5px 5px gray; border-radius: 30px; background-color: white;}
+    .Skills_ImgBox{background-repeat: no-repeat; background-size: contain; background-position: center;}
+    .Skills_ImgBox div{display: flex; visibility:hidden; width: 115px; height: 115px; color: white; border-radius: 30px; justify-content: center; align-items: center;}
+    .Skills_ImgBox:hover div{visibility: visible; background-color: black; opacity: .8;}
 
     /*Project*/
 
@@ -49,7 +55,7 @@
     </div>
 </header>
 <div id="content">
-    <div id="HomePage">
+    <div id="Home">
         <div>
             <h1>Developer 박범석의 포트폴리오입니다.</h1>
         </div>
@@ -80,23 +86,70 @@
         <div id="Skills_Content">
             <div id="Launage">
                 <h2>Launage</h2>
-                <div></div>
+                <!-- 자바 -->
+                <div class="Skills_ImgBox"style="background-image: url(img/logo/java_logo.png);">
+                    <div>Intermediate</div>
+                </div>
+                <!-- JS -->
+                <div class="Skills_ImgBox"style="background-image: url(img/logo/js_img.png);">
+                    <div>basic</div>
+                </div>
+                <!-- 파이썬 -->
+                <div class="Skills_ImgBox"style="background-image: url(img/logo/python_logo.png);">
+                    <div>basic</div>
+                </div>
+                <!-- C# -->
+                <div class="Skills_ImgBox"style="background-image: url(img/logo/cshop_logo.png);">
+                    <div>basic</div>
+                </div>
             </div>
             <div id="Web_Skils">
                 <h2>Web Skils</h2>
-                <div></div>
+                <!-- Html -->
+                <div class="Skills_ImgBox"style="background-image: url(img/logo/html_logo.png);">
+                    <div>Intermediate</div>
+                </div>
+                <!-- Css -->
+                <div class="Skills_ImgBox"style="background-image: url(img/logo/css_logo.png);">
+                    <div>Intermediate</div>
+                </div>
+                <!-- JS -->
+                <div class="Skills_ImgBox"style="background-image: url(img/logo/js_img.png);">
+                    <div>basic</div>
+                </div>
+                <!-- 제이쿼리 -->
+                <div class="Skills_ImgBox"style="background-image: url(img/logo/jQuery_logo.png);">
+                    <div>Intermediate</div>
+                </div>
             </div>
             <div id="FrameWork">
                 <h2>FrameWork</h2>
-                <div></div>
+                <!-- 스프링 -->
+                <div class="Skills_ImgBox"style="background-image: url(img/logo/spring_logo.png);">
+                    <div>Intermediate</div>
+                </div>
             </div>
             <div id="DataBase">
                 <h2>DataBase</h2>
-                <div></div>
+                <!-- 오라클 -->
+                <div class="Skills_ImgBox"style="background-image: url(img/logo/oracle_logo.png);">
+                    <div>basic</div>
+                </div>
             </div>
             <div id="Operating_System">
                 <h2>Operating System</h2>
-                <div></div>
+                <!-- 윈도우 -->
+                <div class="Skills_ImgBox"style="background-image: url(img/logo/window_logo.png);">
+                    <div>expert</div>
+                </div>
+                <!-- 리눅스 -->
+            </div>
+            <div id="Etc">
+                <h2>Etc</h2>
+                <!-- 깃 -->
+                <div class="Skills_ImgBox"style="background-image: url(img/logo/github-logo.png);">
+                    <div>basic</div>
+                </div>
             </div>
         </div>
     </div>
@@ -119,5 +172,5 @@
 </div>
 
 </body>
-<script type="text/javascript" src="C:\Users\st473\Documents\GitHub\Bumduck.github.io\js\index_event.js"></script>
+<script src="C:\Users\st473\Documents\GitHub\Bumduck.github.io\js\index_event.js"></script>
 </html>
