@@ -3,44 +3,7 @@
 <head>
 <title>Bumduck PortFolio</title>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<style>
-    *{padding: 0; margin: 0;}
-
-    /*네비*/
-    #header_{position: fixed; right: 3%; background-color: black; opacity: 80%; border-radius: 0 0 15px 15px / 0 0 15px 15px;}
-    #header_ ul li{list-style: none; float: right; margin-right: 3rem; padding: 1.5rem; color: white;}
-    #header_ ul li:hover{cursor: pointer;}
-    #header_ ul li:last-child{margin-left: 3rem;}
-
-    /*Home*/
-
-    #Home{height: 100vh; width: 100%; display: flex; justify-content: center; align-items: center;  background-image: url(img/Back.jpg); background-repeat: no-repeat; background-size: cover;}
-    #Home h1{font-size: 3vw; color: white;}
-
-    /*About*/
-
-    #About{display: flex; width: 100%; height: 100%; background-color: #DDFFAA;}
-    #About_Title{width: 25vw; margin-left: 4vw; margin-right: 6vw; text-align: center; align-self: center;}
-    #About_Content{margin: 8vw 8vw 8vw 0;}
-
-    /*Skills*/
-
-    #Skills{width: 100%; height: 100%; text-align: center; background-color: #00000011; padding-top: 15px;}
-    #Skills_Content > div{align-self: center; margin: 15px 0 0 0;}
-    #Skills_Content > div > div{display: inline-block; width: 115px; height: 115px; margin: 2vw 3vw 2vw 0; box-shadow: 5px 5px 5px 5px gray; border-radius: 30px; background-color: white;}
-    .Skills_ImgBox{background-repeat: no-repeat; background-size: contain; background-position: center;}
-    .Skills_ImgBox div{display: flex; visibility:hidden; width: 115px; height: 115px; color: white; border-radius: 30px; justify-content: center; align-items: center;}
-    .Skills_ImgBox:hover div{visibility: visible; background-color: black; opacity: .8;}
-
-    /*Project*/
-
-    #Project{width: 100%; height: 100%; text-align: center;}
-
-    /*Contact*/
-
-    #Contact{width: 100%; height: 100%; text-align: center;}
-
-</style>
+<link href="css/index.css" rel="stylesheet">
 </head>
 <body>
 <header>
@@ -157,8 +120,23 @@
         <div id="Project_Title">
             <h1>Project</h1>
         </div>
-        <div id="Project_Content">
-            
+        <div id="Box_Wrap">
+            <div id="Project_Content">
+                <div class="Project_Box">
+                    <a href="https://github.com/Bumduck96/PuB">
+                        <div class="Project_img" style="background-image: url(img/project/pub_project.png);" >
+                        </div>
+                    </a>
+                    <div class="Project_content">
+                        <h2 class="Project_name">PuB</h2>
+                        <h3 class="Period">개발 기간 : 2020.06.18~2020.10.14</h3>
+                        <p class="Info">포스트 코로나에 대비한 비대면 서비스 전자도서관 웹 공공과 책을 결합한 단어(Public + Book)</p>
+                        <ul class="HashTag">
+                            <li>#Java</li><li>#Spring</li><li>#JavaScript</li><li>#Oracle</li><li>#MyBatis</li><li>#JQuery</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div id="Contact">
@@ -166,7 +144,7 @@
             <h1>Contact</h1>
         </div>
         <div id="Contact_Content">
-            <h2>Email : st4731@naver.com</h2>
+            <p id="Email">Email : st4731@naver.com</p>
         </div>
     </div>
 </div>
