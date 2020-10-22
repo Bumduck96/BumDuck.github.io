@@ -10,7 +10,7 @@ ul li{list-style: none;}
 
     /*Home*/
 
-    #Home{height: 100vh; width: 100%; display: flex; justify-content: center; align-items: center;  background-image: url(img/Back.jpg); background-repeat: no-repeat; background-size: cover;}
+    #Home{height: 100vh; width: 100%; display: flex; justify-content: center; align-items: center;  background-image: url("img/Back.jpg"); background-repeat: no-repeat; background-size: cover;}
     #Home h1{font-size: 3vw; color: white;}
 
     /*About*/
