@@ -22,7 +22,7 @@ ul li{list-style: none;}
 
     /*About*/
 
-    #About{width: 100%; height: 100%; background-color: #DDFFAA;}
+    #About{width: 100%; height: 100%;}
     #About_Title{width: 100%; text-align: center;}
     #About_Content{margin: 0 3vw 0 3vw; padding-bottom: 8vw; text-align: center;}
     #About_Content h1{margin: 15px 0 15px 0;}
@@ -39,7 +39,7 @@ ul li{list-style: none;}
 
     /*Project*/
 
-    #Project{width: 100%; height: 100%; background-color: greenyellow; text-align: center;}
+    #Project{width: 100%; height: 100%; background-color: #fffff0; text-align: center;}
     #Box_Wrap{display: flex; flex-wrap: wrap; justify-content: center;}
     #Project_Title{text-align: center;}
     .Project_Box{height: 100%; width: 100%; max-width: 80vw; border-radius: 4px; max-width: 80vw; margin: 0 auto 30px; background-color: white; box-shadow: 0 3px 6px rgba(0,0,0,.2), 0 3px 6px rgba(0,0,0,.2);}

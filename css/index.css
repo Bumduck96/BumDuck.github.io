@@ -16,7 +16,7 @@ ul li{list-style: none;}
 
     /*About*/
 
-    #About{display: flex; width: 100%; height: 100%; background-color: #DDFFAA;}
+    #About{display: flex; width: 100%; height: 100%;}
     #About_Title{width: 25vw; margin-left: 4vw; margin-right: 6vw; text-align: center; align-self: center;}
     #About_Content{margin: 8vw 8vw 8vw 0;}
     #About_Content > pre{font-size: 1rem;}
@@ -32,7 +32,7 @@ ul li{list-style: none;}
 
     /*Project*/
 
-    #Project{width: 100%; height: 100%; background-color: greenyellow; text-align: center;}
+    #Project{width: 100%; height: 100%; background-color: #fffff0; text-align: center;}
     #Box_Wrap{display: flex; flex-wrap: wrap; justify-content: center;}
     #Project_Title{text-align: center;}
     .Project_Box{height: 360px; width: 100%; max-width: 80vw; border-radius: 4px; max-width: 80vw; margin: 0 auto 30px; background-color: white; box-shadow: 0 3px 6px rgba(0,0,0,.2), 0 3px 6px rgba(0,0,0,.2);}
