@@ -3,7 +3,9 @@
 <head>
 <title>Bumduck PortFolio</title>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<link href="css/index.css" rel="stylesheet">
+<!--<link href="css/index.css" rel="stylesheet">-->
+<link href="css/index.css" rel="stylesheet" media="screen and (min-width:768px)">
+<link  href="css\mobile.css" rel="stylesheet" media="screen and (min-width:0px) and (max-width:768px)"/>
 </head>
 <body>
 <header>
@@ -29,17 +31,17 @@
         </div>
         <div id="About_Content">
             <h1>소제목</h1>
-            <pre>
-저는 고등학교때 자바를 알게 되었습니다.
-자바라는 언어로 간단한 구구단, 피라미드 예제를 하면서 지금은 간단하겠지만 그 때는 에러가 발생하면 무슨 문제인지 파악조차 못했습니다.
-그렇게 1시간정도 인터넷과 코드만 찾아보다 ‘}’를 놓쳐 발생한 오류라는 것을 알아냈습니다.
-오류원인을 찾고 보니 허무함과 황당함을 느끼기도 했지만 결국 오류를 찾아 수정하고 정상적으로 실행됐을 때 지금까지 느껴보지 못했던 큰 성취감을 느끼게 되었습니다.
-이러한 경험으로 꿈을 정하게 되었고 ‘내가 개발자라는 길을 가기위해 어떤 것을 해야 할까?’라는 생각이 들어 관련학과로 진학했습니다.
-대학에서 배우는 과정들이 이제까지의 공부와는 다르게 지루하지 않고 재미있었습니다.
-지금까지의 경험을 비추어 개발자에게 필요하다고 느낀 2가지가 있습니다.
-그것은 끈기와 호기심입니다.
-호기심을 갖고 끈기 있게 도전하면 결실을 맺고 보람을 느낄 수 있다고 생각합니다.
-            </pre>
+            <p>
+                저는 고등학교때 자바를 알게 되었습니다.
+                자바라는 언어로 간단한 구구단, 피라미드 예제를 하면서 지금은 간단하겠지만 그 때는 에러가 발생하면 무슨 문제인지 파악조차 못했습니다.
+                그렇게 1시간정도 인터넷과 코드만 찾아보다 ‘}’를 놓쳐 발생한 오류라는 것을 알아냈습니다.
+                오류원인을 찾고 보니 허무함과 황당함을 느끼기도 했지만 결국 오류를 찾아 수정하고 정상적으로 실행됐을 때 지금까지 느껴보지 못했던 큰 성취감을 느끼게 되었습니다.
+                이러한 경험으로 꿈을 정하게 되었고 ‘내가 개발자라는 길을 가기위해 어떤 것을 해야 할까?’라는 생각이 들어 관련학과로 진학했습니다.
+                대학에서 배우는 과정들이 이제까지의 공부와는 다르게 지루하지 않고 재미있었습니다.
+                지금까지의 경험을 비추어 개발자에게 필요하다고 느낀 2가지가 있습니다.
+                그것은 끈기와 호기심입니다.
+                호기심을 갖고 끈기 있게 도전하면 결실을 맺고 보람을 느낄 수 있다고 생각합니다.
+            </p>
         </div>
     </div>
     <div id="Skills">
@@ -121,13 +123,15 @@
             <h1>Project</h1>
         </div>
         <div id="Box_Wrap">
-            <div id="Project_Content">
+            
                 <div class="Project_Box">
-                    <a href="https://github.com/Bumduck96/PuB">
-                        <div class="Project_img" style="background-image: url(img/project/pub_project.png);" >
-                        </div>
-                    </a>
-                    <div class="Project_content">
+                    <div class="Project_ImgBox">
+                        <a href="https://github.com/Bumduck96/PuB"></a>
+                            <div class="Project_img" style="background-image: url(img/project/pub_project.png);" >
+                            </div>
+                        </a>
+                    </div>
+                    <div class="Project_Info">
                         <h2 class="Project_name">PuB</h2>
                         <h3 class="Period">개발 기간 : 2020.06.18~2020.10.14</h3>
                         <p class="Info">포스트 코로나에 대비한 비대면 서비스 전자도서관 웹 공공과 책을 결합한 단어(Public + Book)</p>
@@ -136,7 +140,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+            
         </div>
     </div>
     <div id="Contact">
@@ -150,5 +154,6 @@
 </div>
 
 </body>
-<script src="js/index_event.js"></script>
+<!--<script src="js/index_event.js"></script>-->
+<script src="js\index_event.js"></script>
 </html>
