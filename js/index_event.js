@@ -9,10 +9,10 @@ $(function(){
     $("#memu_Box").on("click",function(){
         if($("#menu_Bar1").hasClass("on")){
             $(".menu_Bar").removeClass("on");
-            $('#header_ ul').slideUp(300);
+            $('#Mobile').slideUp(300);
         }else{
             $(".menu_Bar").addClass("on");
-            $('#header_ ul').slideDown(300);
+            $('#Mobile').slideDown(300);
         }
     });
 });
